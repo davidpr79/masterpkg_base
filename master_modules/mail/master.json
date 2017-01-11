@@ -1,7 +1,0 @@
-{
-  "name": "masterModule_mail",
-  "npmDependencies": {
-    "nodemailer": "^2.4.2",
-    "nodemailer-html-to-text": "^2.1.0"
-  }
-}

@@ -61,12 +61,13 @@
                 _authenticated = !!identity;
                 var lang = navigator.language.substring(0,2);
                 if (_identity) {
-                    lang = _identity.lang || lang;
+                    lang= _identity.lang || lang;
                 }
-                if(clientConfig.langs && clientConfig.langs.indexOf(lang) === -1){
+                if(clientConfig.langs && clientConfig.langs.indexOf(lang)<0){
+                    lang = clientConfig.defaultLang || "en";
+                }else{
                     lang = clientConfig.defaultLang || "en";
                 }
-
                 if (gettextCatalog.getCurrentLanguage() !== lang) {
                     gettextCatalog.setCurrentLanguage(lang);
                     gettextCatalog.loadRemote("/translations/" + lang + ".json");

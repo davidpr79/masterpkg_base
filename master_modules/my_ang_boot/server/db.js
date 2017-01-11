@@ -13,7 +13,6 @@ config.database.log = logger.log.bind(logger);
 
 var db = new ORM.Database(config.database);
 __mods.db = db;
-var api = __mods.api;
 
 
 _.each(config.masterModules, function(module, moduleName) {
@@ -35,22 +34,7 @@ _.each(config.masterModules, function(module, moduleName) {
 	}
 });
 
-
-
 db.loadAll(function (err) {
-
-	// Add all models as swagger definition
-	_.each(db.$classes, function(cls) {
-		var model = api.syncorm2swagger(cls);
-		if (model) {
-			api.addModel(model);
-		}
-		var modelS = api.syncorm2swagger(cls, "S", "S");
-		if (modelS) {
-			api.addModel(modelS);
-		}
-	});
-
 	if (err) {
 		logger.error(err.stack);
 		return;

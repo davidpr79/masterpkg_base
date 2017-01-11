@@ -12,7 +12,7 @@
             define: function(menuItem) {
                 menuItems.push(menuItem);
             },
-            $get: ["principal","gettextCatalog", function(principal, gettextCatalog) {
+            $get: ["_", "principal","gettextCatalog", function(_, principal, gettextCatalog) {
 
                 function MainMenu() {
 

@@ -2,10 +2,11 @@
 	"name": "masterWeb",
 	"description": "Versió web masterCamping",
 	"commonConfig": {
-		"version": "0.1.11"
+		"version": "0.0.2"
 	},
 	"npmDependencies": {
-		"nconf": "^0.7.1"
+		"nconf": "^0.7.1",
+		"winston": "^2.1.1"
 	}
 }
 

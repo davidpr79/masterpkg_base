@@ -1,0 +1,7 @@
+{
+ "name": "masterModule_generic_dialogs",
+ "ignore": [
+  "*",
+  "!bower.json"
+ ]
+}

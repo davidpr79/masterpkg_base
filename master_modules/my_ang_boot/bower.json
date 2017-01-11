@@ -1,0 +1,23 @@
+{
+ "name": "masterModule_my_ang_boot",
+ "dependencies": {
+  "angular": "1.4.9",
+  "angular-sanitize": "1.4.9",
+  "angular-ui-router": "0.2.15",
+  "bootstrap": "~3.3.6",
+  "angular-bootstrap": "0.14.3",
+  "angular-gettext": "2.1.2",
+  "underscore": "~1.8.3",
+  "ng-debounce": "~0.1.5",
+  "moment": "~2.10.2",
+  "jquery": "2.1.4",
+  "jquery-ui": "1.11.4"
+ },
+ "resolutions": {
+  "angular": "1.4.9"
+ },
+ "ignore": [
+  "*",
+  "!bower.json"
+ ]
+}

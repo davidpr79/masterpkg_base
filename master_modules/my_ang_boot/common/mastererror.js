@@ -5,9 +5,7 @@
 function MasterError(code, message) {
   this.name = 'MasterError';
   this.errorCode = code;
-  this.code = code;
   this.message = message || code;
-  Error.captureStackTrace(this, MasterError);
 }
 
 MasterError.prototype = Object.create(Error.prototype);

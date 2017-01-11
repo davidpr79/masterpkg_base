@@ -1,0 +1,10 @@
+{
+ "name": "masterModule_aggrid",
+ "dependencies": {
+  "ag-grid": "2.3.5"
+ },
+ "ignore": [
+  "*",
+  "!bower.json"
+ ]
+}
